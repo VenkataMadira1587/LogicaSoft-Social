@@ -12,6 +12,8 @@
 		C720B3581EF5862200C052D5 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3571EF5862200C052D5 /* RoundBtn.swift */; };
 		C720B35A1EF5896700C052D5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3591EF5896700C052D5 /* CustomTextField.swift */; };
 		C720B35C1EF58AF100C052D5 /* RoundBtn_Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */; };
+		C720B35F1EF5D3AE00C052D5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C720B35D1EF5D3AE00C052D5 /* FBSDKCoreKit.framework */; };
+		C720B3601EF5D3AE00C052D5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C720B35E1EF5D3AE00C052D5 /* FBSDKLoginKit.framework */; };
 		C771F5631EF521D30048850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5621EF521D30048850A /* AppDelegate.swift */; };
 		C771F5651EF521D30048850A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5641EF521D30048850A /* SignInVC.swift */; };
 		C771F5681EF521D30048850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F5661EF521D30048850A /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		C720B3571EF5862200C052D5 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		C720B3591EF5896700C052D5 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn_Signin.swift; sourceTree = "<group>"; };
+		C720B35D1EF5D3AE00C052D5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C720B35E1EF5D3AE00C052D5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C771F55F1EF521D30048850A /* logicaSoft-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logicaSoft-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C771F5621EF521D30048850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C771F5641EF521D30048850A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */,
+				C720B35F1EF5D3AE00C052D5 /* FBSDKCoreKit.framework in Frameworks */,
+				C720B3601EF5D3AE00C052D5 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,8 @@
 		1C59BA5F26968A05A700D0B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C720B35D1EF5D3AE00C052D5 /* FBSDKCoreKit.framework */,
+				C720B35E1EF5D3AE00C052D5 /* FBSDKLoginKit.framework */,
 				5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */,
 			);
 			name = Frameworks;
@@ -396,6 +404,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HT287C29S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "logicaSoft-Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.logicasoft.www.logicaSoft-Social";
@@ -410,6 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HT287C29S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "logicaSoft-Social/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.logicasoft.www.logicaSoft-Social";

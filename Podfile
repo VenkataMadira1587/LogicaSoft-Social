@@ -3,12 +3,13 @@
 
 target 'logicaSoft-Social' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
   # Pods for logicaSoft-Social
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod 'FBSDKLoginKit'
 
 end
