@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C771F5631EF521D30048850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5621EF521D30048850A /* AppDelegate.swift */; };
-		C771F5651EF521D30048850A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5641EF521D30048850A /* ViewController.swift */; };
+		C771F5651EF521D30048850A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5641EF521D30048850A /* SignInVC.swift */; };
 		C771F5681EF521D30048850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F5661EF521D30048850A /* Main.storyboard */; };
 		C771F56A1EF521D30048850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C771F5691EF521D30048850A /* Assets.xcassets */; };
 		C771F56D1EF521D30048850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F56B1EF521D30048850A /* LaunchScreen.storyboard */; };
+		C771F5751EF523040048850A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C771F5741EF523040048850A /* GoogleService-Info.plist */; };
+		F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0758F6DD53A9433572FE6C5E /* Pods-logicaSoft-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logicaSoft-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social.release.xcconfig"; sourceTree = "<group>"; };
+		5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_logicaSoft_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B5D4B5217D79CC972272E35 /* Pods-logicaSoft-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logicaSoft-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		C771F55F1EF521D30048850A /* logicaSoft-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logicaSoft-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C771F5621EF521D30048850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C771F5641EF521D30048850A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C771F5641EF521D30048850A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		C771F5671EF521D30048850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C771F5691EF521D30048850A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C771F56C1EF521D30048850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C771F56E1EF521D30048850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C771F5741EF523040048850A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C59BA5F26968A05A700D0B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFE3362C30E4775C95840C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B5D4B5217D79CC972272E35 /* Pods-logicaSoft-Social.debug.xcconfig */,
+				0758F6DD53A9433572FE6C5E /* Pods-logicaSoft-Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C720B34F1EF5348500C052D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C720B3501EF5348D00C052D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C720B3511EF5349600C052D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C771F5641EF521D30048850A /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C771F5561EF521D30048850A = {
 			isa = PBXGroup;
 			children = (
 				C771F5611EF521D30048850A /* logicaSoft-Social */,
 				C771F5601EF521D30048850A /* Products */,
+				AFE3362C30E4775C95840C32 /* Pods */,
+				1C59BA5F26968A05A700D0B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +102,15 @@
 		C771F5611EF521D30048850A /* logicaSoft-Social */ = {
 			isa = PBXGroup;
 			children = (
+				C720B34F1EF5348500C052D5 /* Model */,
+				C720B3511EF5349600C052D5 /* Controller */,
+				C720B3501EF5348D00C052D5 /* View */,
 				C771F5621EF521D30048850A /* AppDelegate.swift */,
-				C771F5641EF521D30048850A /* ViewController.swift */,
 				C771F5661EF521D30048850A /* Main.storyboard */,
 				C771F5691EF521D30048850A /* Assets.xcassets */,
 				C771F56B1EF521D30048850A /* LaunchScreen.storyboard */,
 				C771F56E1EF521D30048850A /* Info.plist */,
+				C771F5741EF523040048850A /* GoogleService-Info.plist */,
 			);
 			path = "logicaSoft-Social";
 			sourceTree = "<group>";
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C771F5711EF521D30048850A /* Build configuration list for PBXNativeTarget "logicaSoft-Social" */;
 			buildPhases = (
+				0763E06D5862B71EC61C1997 /* [CP] Check Pods Manifest.lock */,
 				C771F55B1EF521D30048850A /* Sources */,
 				C771F55C1EF521D30048850A /* Frameworks */,
 				C771F55D1EF521D30048850A /* Resources */,
+				72950F7A812CC446C619A688 /* [CP] Embed Pods Frameworks */,
+				616BEA1AE0C9EE6EDA70634F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C771F56D1EF521D30048850A /* LaunchScreen.storyboard in Resources */,
+				C771F5751EF523040048850A /* GoogleService-Info.plist in Resources */,
 				C771F56A1EF521D30048850A /* Assets.xcassets in Resources */,
 				C771F5681EF521D30048850A /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0763E06D5862B71EC61C1997 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		616BEA1AE0C9EE6EDA70634F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72950F7A812CC446C619A688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C771F55B1EF521D30048850A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C771F5651EF521D30048850A /* ViewController.swift in Sources */,
+				C771F5651EF521D30048850A /* SignInVC.swift in Sources */,
 				C771F5631EF521D30048850A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +364,7 @@
 		};
 		C771F5721EF521D30048850A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B5D4B5217D79CC972272E35 /* Pods-logicaSoft-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HT287C29S;
@@ -274,6 +378,7 @@
 		};
 		C771F5731EF521D30048850A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0758F6DD53A9433572FE6C5E /* Pods-logicaSoft-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7HT287C29S;
@@ -304,6 +409,7 @@
 				C771F5731EF521D30048850A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
