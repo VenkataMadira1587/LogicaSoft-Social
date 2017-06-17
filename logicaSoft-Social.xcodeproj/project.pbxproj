@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C720B3531EF57ED800C052D5 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3521EF57ED800C052D5 /* CustomView.swift */; };
+		C720B3561EF5839A00C052D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3551EF5839A00C052D5 /* Constants.swift */; };
+		C720B3581EF5862200C052D5 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3571EF5862200C052D5 /* RoundBtn.swift */; };
+		C720B35A1EF5896700C052D5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B3591EF5896700C052D5 /* CustomTextField.swift */; };
+		C720B35C1EF58AF100C052D5 /* RoundBtn_Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */; };
 		C771F5631EF521D30048850A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5621EF521D30048850A /* AppDelegate.swift */; };
 		C771F5651EF521D30048850A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C771F5641EF521D30048850A /* SignInVC.swift */; };
 		C771F5681EF521D30048850A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F5661EF521D30048850A /* Main.storyboard */; };
@@ -20,6 +25,11 @@
 		0758F6DD53A9433572FE6C5E /* Pods-logicaSoft-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logicaSoft-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social.release.xcconfig"; sourceTree = "<group>"; };
 		5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_logicaSoft_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5D4B5217D79CC972272E35 /* Pods-logicaSoft-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-logicaSoft-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-logicaSoft-Social/Pods-logicaSoft-Social.debug.xcconfig"; sourceTree = "<group>"; };
+		C720B3521EF57ED800C052D5 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C720B3551EF5839A00C052D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C720B3571EF5862200C052D5 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		C720B3591EF5896700C052D5 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn_Signin.swift; sourceTree = "<group>"; };
 		C771F55F1EF521D30048850A /* logicaSoft-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logicaSoft-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C771F5621EF521D30048850A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C771F5641EF521D30048850A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -69,6 +79,10 @@
 		C720B3501EF5348D00C052D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C720B3521EF57ED800C052D5 /* CustomView.swift */,
+				C720B3571EF5862200C052D5 /* RoundBtn.swift */,
+				C720B3591EF5896700C052D5 /* CustomTextField.swift */,
+				C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -81,9 +95,18 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		C720B3541EF5835C00C052D5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C720B3551EF5839A00C052D5 /* Constants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		C771F5561EF521D30048850A = {
 			isa = PBXGroup;
 			children = (
+				C720B3541EF5835C00C052D5 /* Utilities */,
 				C771F5611EF521D30048850A /* logicaSoft-Social */,
 				C771F5601EF521D30048850A /* Products */,
 				AFE3362C30E4775C95840C32 /* Pods */,
@@ -240,8 +263,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C720B35C1EF58AF100C052D5 /* RoundBtn_Signin.swift in Sources */,
+				C720B3531EF57ED800C052D5 /* CustomView.swift in Sources */,
+				C720B3581EF5862200C052D5 /* RoundBtn.swift in Sources */,
+				C720B35A1EF5896700C052D5 /* CustomTextField.swift in Sources */,
 				C771F5651EF521D30048850A /* SignInVC.swift in Sources */,
 				C771F5631EF521D30048850A /* AppDelegate.swift in Sources */,
+				C720B3561EF5839A00C052D5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

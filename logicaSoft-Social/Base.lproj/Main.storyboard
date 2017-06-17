@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-Xc-ZC5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ie9-Xc-ZC5" customClass="CustomView" customModule="logicaSoft_Social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lolgicasoft_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-Xa-PzY">
@@ -55,17 +55,8 @@
                                     <constraint firstItem="STk-aO-ZaQ" firstAttribute="top" secondItem="MaZ-wy-OQE" secondAttribute="top" constant="8" id="v8X-FT-duc"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Signin Option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8X-Ar-7r5">
-                                <rect key="frame" x="16" y="138" width="343" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="R9P-5L-gNX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvu-rS-Jh2">
-                                <rect key="frame" x="112" y="199" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvu-rS-Jh2" customClass="RoundBtn" customModule="logicaSoft_Social" customModuleProvider="target">
+                                <rect key="frame" x="112" y="211" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.2138250470161438" green="0.32728967070579529" blue="0.57631134986877441" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Ww4-aS-jsr"/>
@@ -74,21 +65,21 @@
                                 <state key="normal" image="f"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ywb-bV-f9K">
-                                <rect key="frame" x="46" y="379" width="283" height="120"/>
+                                <rect key="frame" x="46" y="391" width="283" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bON-s3-2E8">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bON-s3-2E8" customClass="CustomTextField" customModule="logicaSoft_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.15279858732876711" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-2J-7jM">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-2J-7jM" customClass="CustomTextField" customModule="logicaSoft_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="45" width="283" height="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.17877782534246575" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su4-ib-RYY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su4-ib-RYY" customClass="RoundBtn_Signin" customModule="logicaSoft_Social" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="283" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.0" alpha="0.95716502568493156" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign In">
@@ -97,6 +88,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Signin Option" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8X-Ar-7r5">
+                                <rect key="frame" x="16" y="161" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="R9P-5L-gNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -106,15 +106,15 @@
                             <constraint firstAttribute="trailing" secondItem="MaZ-wy-OQE" secondAttribute="trailing" id="TDv-vr-Qys"/>
                             <constraint firstItem="ie9-Xc-ZC5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TSs-YY-i9P"/>
                             <constraint firstAttribute="trailing" secondItem="ie9-Xc-ZC5" secondAttribute="trailing" id="U1E-mE-GEN"/>
-                            <constraint firstItem="Bvu-rS-Jh2" firstAttribute="top" secondItem="E8X-Ar-7r5" secondAttribute="bottom" constant="40" id="Ykz-bX-XEd"/>
+                            <constraint firstItem="Bvu-rS-Jh2" firstAttribute="top" secondItem="E8X-Ar-7r5" secondAttribute="bottom" constant="29" id="Ykz-bX-XEd"/>
                             <constraint firstItem="Bvu-rS-Jh2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yxc-d7-Ui1"/>
-                            <constraint firstItem="ywb-bV-f9K" firstAttribute="top" secondItem="E8X-Ar-7r5" secondAttribute="bottom" constant="220" id="bgU-z2-zBg"/>
+                            <constraint firstItem="ywb-bV-f9K" firstAttribute="top" secondItem="E8X-Ar-7r5" secondAttribute="bottom" constant="209" id="bgU-z2-zBg"/>
                             <constraint firstItem="E8X-Ar-7r5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h12-dF-bqk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MaZ-wy-OQE" secondAttribute="bottom" id="hwr-1q-CXQ"/>
                             <constraint firstItem="ie9-Xc-ZC5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j7b-eg-T6C"/>
                             <constraint firstItem="E8X-Ar-7r5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mp9-aE-AAo"/>
                             <constraint firstItem="MaZ-wy-OQE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="opg-Pj-KyG"/>
-                            <constraint firstItem="E8X-Ar-7r5" firstAttribute="top" secondItem="ie9-Xc-ZC5" secondAttribute="bottom" constant="8" id="xf7-tK-fhQ"/>
+                            <constraint firstItem="E8X-Ar-7r5" firstAttribute="top" secondItem="ie9-Xc-ZC5" secondAttribute="bottom" constant="31" id="xf7-tK-fhQ"/>
                         </constraints>
                     </view>
                 </viewController>
