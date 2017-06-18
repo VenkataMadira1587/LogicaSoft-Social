@@ -20,6 +20,7 @@
 		C771F56A1EF521D30048850A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C771F5691EF521D30048850A /* Assets.xcassets */; };
 		C771F56D1EF521D30048850A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C771F56B1EF521D30048850A /* LaunchScreen.storyboard */; };
 		C771F5751EF523040048850A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C771F5741EF523040048850A /* GoogleService-Info.plist */; };
+		C7D506EF1EF6946B00CC6092 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506EE1EF6946B00CC6092 /* FeedVC.swift */; };
 		F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		C771F56C1EF521D30048850A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C771F56E1EF521D30048850A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C771F5741EF523040048850A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7D506EE1EF6946B00CC6092 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C771F5641EF521D30048850A /* SignInVC.swift */,
+				C7D506EE1EF6946B00CC6092 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				C720B3531EF57ED800C052D5 /* CustomView.swift in Sources */,
 				C720B3581EF5862200C052D5 /* RoundBtn.swift in Sources */,
 				C720B35A1EF5896700C052D5 /* CustomTextField.swift in Sources */,
+				C7D506EF1EF6946B00CC6092 /* FeedVC.swift in Sources */,
 				C771F5651EF521D30048850A /* SignInVC.swift in Sources */,
 				C771F5631EF521D30048850A /* AppDelegate.swift in Sources */,
 				C720B3561EF5839A00C052D5 /* Constants.swift in Sources */,
