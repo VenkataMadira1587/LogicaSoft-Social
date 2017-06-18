@@ -1,6 +1,0 @@
-framework module Pods_logicaSoft_Social {
-  umbrella header "Pods-logicaSoft-Social-umbrella.h"
-
-  export *
-  module * { export * }
-}
