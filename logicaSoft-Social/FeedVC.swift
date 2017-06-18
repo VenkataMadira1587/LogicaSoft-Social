@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
+
 
 class FeedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    @IBAction func signOutBtnPressed(_ sender: Any) {
+       
+    let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        if removeSuccessful == true{
+            performSegue(withIdentifier: "gotoSign", sender: nil)
+        }
+        
     }
 
 
 }
+ 
