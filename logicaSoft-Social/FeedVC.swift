@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftKeychainWrapper
+import Firebase
 
 
 class FeedVC: UIViewController {
@@ -22,8 +23,15 @@ class FeedVC: UIViewController {
        
     let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         if removeSuccessful == true{
-            performSegue(withIdentifier: "gotoSign", sender: nil)
-        }
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                performSegue(withIdentifier: "gotoSign", sender: nil)
+
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+                    }
         
     }
 
