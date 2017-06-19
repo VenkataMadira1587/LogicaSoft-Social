@@ -22,6 +22,7 @@
 		C771F5751EF523040048850A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C771F5741EF523040048850A /* GoogleService-Info.plist */; };
 		C7D506EF1EF6946B00CC6092 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506EE1EF6946B00CC6092 /* FeedVC.swift */; };
 		C7D506F11EF71E5100CC6092 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F01EF71E5100CC6092 /* CircleView.swift */; };
+		C7D506F31EF872FC00CC6092 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F21EF872FC00CC6092 /* PostCell.swift */; };
 		F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		C771F5741EF523040048850A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7D506EE1EF6946B00CC6092 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		C7D506F01EF71E5100CC6092 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		C7D506F21EF872FC00CC6092 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				C720B3591EF5896700C052D5 /* CustomTextField.swift */,
 				C720B35B1EF58AF100C052D5 /* RoundBtn_Signin.swift */,
 				C7D506F01EF71E5100CC6092 /* CircleView.swift */,
+				C7D506F21EF872FC00CC6092 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				C771F5651EF521D30048850A /* SignInVC.swift in Sources */,
 				C771F5631EF521D30048850A /* AppDelegate.swift in Sources */,
 				C720B3561EF5839A00C052D5 /* Constants.swift in Sources */,
+				C7D506F31EF872FC00CC6092 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
