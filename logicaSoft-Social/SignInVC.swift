@@ -58,7 +58,8 @@ class SignInVC: UIViewController {
             }else{
                 print("Ven: Sucessfully authenticated FIREBASE")
                 if let user = user{
-                   self.completeSignin(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                   self.completeSignin(id: user.uid, userData: userData)
                 }
                 
             }
@@ -72,7 +73,8 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("Venkat: Email User athenticated with Firebase")
                     if let user = user{
-                        self.completeSignin(id:user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignin(id: user.uid, userData: userData)
                     }
                 }else{
                     Firebase.Auth.auth().createUser(withEmail: email, password: pwd, completion: { (user, error) in
@@ -81,7 +83,8 @@ class SignInVC: UIViewController {
                         }else{
                             print("Venkat: Sucessfully Authenticated with FireBase")
                             if let user = user{
-                            self.completeSignin(id:user.uid)
+                                let userData = ["provider": user.providerID]
+                            self.completeSignin(id:user.uid, userData: userData)
                             }
                         }
                     })
@@ -90,7 +93,9 @@ class SignInVC: UIViewController {
         }
     }
     
-    func completeSignin(id : String){
+    func completeSignin(id : String, userData :Dictionary<String, String>){
+        DataServices.ds.createFirebaseDBUser(uid: id, userData: userData)
+        
         let saveSuccessful: Bool = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Venkat: data saved to Keychain \(saveSuccessful)")
         performSegue(withIdentifier: "gotoFeed", sender: nil)
