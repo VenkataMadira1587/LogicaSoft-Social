@@ -11,6 +11,7 @@ import SwiftKeychainWrapper
 import Firebase
 
 
+
 class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
@@ -53,7 +54,13 @@ class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
         
         let post = self.posts[indexPath.row]
         print("venkat: \(post.caption)")
-        return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell{
+            cell.configureCell(post: post)
+            return cell
+        }else{
+          return PostCell()
+        }
+       
     }
     
     @IBAction func signOutBtnPressed(_ sender: Any) {
