@@ -185,12 +185,16 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nCq-sR-tBx">
                                         <rect key="frame" x="8" y="7" width="265" height="50"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="bII-UG-ak8" customClass="CircleView" customModule="logicaSoft_Social" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="bII-UG-ak8" customClass="CircleView" customModule="logicaSoft_Social" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="H4H-Dt-bgS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="7eX-k9-pq6" appends="YES" id="Uv4-Ug-trO"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-ay-TQ7">
                                                 <rect key="frame" x="60" y="0.0" width="205" height="50"/>
@@ -348,11 +352,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addImage" destination="bII-UG-ak8" id="gkZ-GJ-ov9"/>
                         <outlet property="tableView" destination="8lI-3Z-F5W" id="bS9-5K-8Ee"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSign" id="Gx9-3a-2c5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5d-4g-yic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7eX-k9-pq6">
+                    <connections>
+                        <action selector="imageSourcePicker:" destination="Udf-zb-jgY" id="pKS-1Z-9Vu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="842.39999999999998" y="-767.76611694152928"/>
         </scene>

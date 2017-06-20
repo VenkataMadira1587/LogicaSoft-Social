@@ -12,16 +12,22 @@ import Firebase
 
 
 
-class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
+class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var addImage: CircleView!
     
     var posts = [Post]()
+    var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate=self
         tableView.dataSource = self
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
+        
         
         DataServices.ds.REF_POSTS.observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
@@ -63,6 +69,20 @@ class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
        
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]){
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage{
+            addImage.image = image
+        }else{
+            print("Venkat: Invalid Image selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func imageSourcePicker(_ sender: Any) {
+        
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
     @IBAction func signOutBtnPressed(_ sender: Any) {
        
     let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
@@ -79,6 +99,7 @@ class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource{
         
     }
 
+    
 
 }
  
