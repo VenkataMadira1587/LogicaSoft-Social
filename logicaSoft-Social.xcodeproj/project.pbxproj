@@ -24,6 +24,7 @@
 		C7D506F11EF71E5100CC6092 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F01EF71E5100CC6092 /* CircleView.swift */; };
 		C7D506F31EF872FC00CC6092 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F21EF872FC00CC6092 /* PostCell.swift */; };
 		C7D506F61EF8822A00CC6092 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F51EF8822A00CC6092 /* DataServices.swift */; };
+		C7D506F81EF9B2BF00CC6092 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D506F71EF9B2BF00CC6092 /* Post.swift */; };
 		F4230A1BEBAB83E7DEC0699E /* Pods_logicaSoft_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5461C1AE8AD0B9B6AD01B123 /* Pods_logicaSoft_Social.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		C7D506F01EF71E5100CC6092 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		C7D506F21EF872FC00CC6092 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C7D506F51EF8822A00CC6092 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		C7D506F71EF9B2BF00CC6092 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		C720B34F1EF5348500C052D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7D506F71EF9B2BF00CC6092 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				C7D506F11EF71E5100CC6092 /* CircleView.swift in Sources */,
 				C720B35C1EF58AF100C052D5 /* RoundBtn_Signin.swift in Sources */,
 				C720B3531EF57ED800C052D5 /* CustomView.swift in Sources */,
+				C7D506F81EF9B2BF00CC6092 /* Post.swift in Sources */,
 				C720B3581EF5862200C052D5 /* RoundBtn.swift in Sources */,
 				C720B35A1EF5896700C052D5 /* CustomTextField.swift in Sources */,
 				C7D506F61EF8822A00CC6092 /* DataServices.swift in Sources */,
