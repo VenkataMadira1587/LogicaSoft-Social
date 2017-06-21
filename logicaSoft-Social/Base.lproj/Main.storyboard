@@ -252,7 +252,7 @@
                                                                                 <constraint firstAttribute="width" constant="40" id="1Mo-10-U9t"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ga,dgnksdngsdls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-Nx-FxV">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghI-Nx-FxV">
                                                                             <rect key="frame" x="90" y="0.0" width="145" height="40"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" red="1" green="0.43529411759999997" blue="0.0" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
@@ -320,7 +320,6 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="0.95716502569999995" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="avd-2u-KOl" firstAttribute="leading" secondItem="82G-hg-sIF" secondAttribute="leadingMargin" id="CHS-VR-32v"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="avd-2u-KOl" secondAttribute="bottom" constant="-7" id="X99-be-6q1"/>
