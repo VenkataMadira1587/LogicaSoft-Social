@@ -196,7 +196,7 @@
                                                     <outletCollection property="gestureRecognizers" destination="7eX-k9-pq6" appends="YES" id="Uv4-Ug-trO"/>
                                                 </connections>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-ay-TQ7">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-ay-TQ7" customClass="CustomTextField" customModule="logicaSoft_Social" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="0.0" width="205" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -212,6 +212,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="add-post"/>
+                                        <connections>
+                                            <action selector="postBtnPressed:" destination="Udf-zb-jgY" eventType="touchUpInside" id="zQA-jP-9Gu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.90391173972516325" blue="0.88186593594250184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -327,6 +330,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="HCx-69-qa6" id="agS-oB-J7d"/>
+                                            <outlet property="likesImage" destination="Sy9-yT-g3P" id="dIh-Uz-idQ"/>
                                             <outlet property="likesLbl" destination="PBQ-mH-1bH" id="RFw-gR-4BN"/>
                                             <outlet property="postImage" destination="48V-Ci-qnW" id="1Va-LM-ERF"/>
                                             <outlet property="profileImage" destination="7PV-Dn-ruS" id="aCZ-jd-3S8"/>
@@ -353,6 +357,7 @@
                     </view>
                     <connections>
                         <outlet property="addImage" destination="bII-UG-ak8" id="gkZ-GJ-ov9"/>
+                        <outlet property="captionFeild" destination="mXG-ay-TQ7" id="iNp-0z-il7"/>
                         <outlet property="tableView" destination="8lI-3Z-F5W" id="bS9-5K-8Ee"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="gotoSign" id="Gx9-3a-2c5"/>
                     </connections>
